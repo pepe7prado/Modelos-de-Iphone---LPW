@@ -1,0 +1,22 @@
+body{
+    
+}
+#logo-top{
+    display: block;
+    width: 110px; 
+    height: auto;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(85, 85, 85);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 
+}
+#Evolução{
+    text-align: center;
+    font-size: 75px;
+    font-family: Monospace;
+    text-shadow: 2px 2px 4px rgb(102, 102, 102);
+}
