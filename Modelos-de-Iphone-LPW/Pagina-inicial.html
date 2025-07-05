@@ -17,18 +17,35 @@
     </h1>
     <img id="steve" src="steve jobs.png">
     <h2 class="bem-vindo">Bem-vindo à Linha do Tempo do iPhone!</h2>
-    <p id="texto-inicial">Descubra a <strong class="forte">evolução</strong> de um dos dispositivos mais <strong class="forte">icônicos</strong> 
-        da tecnologia moderna.<br> Neste site, você poderá navegar por páginas dedicadas a <strong class="forte">cada modelo</strong> de iPhone,<br>
+    <p id="texto-inicial">Descubra a <strong class="forte">evolução</strong> de um dos dispositivos mais <strong
+            class="forte">icônicos</strong>
+        da tecnologia moderna.<br> Neste site, você poderá navegar por páginas dedicadas a <strong class="forte">cada
+            modelo</strong> de iPhone,<br>
         do primeiro lançamento em 2007 até o <strong class="forte">iPhone 16.</strong> Em cada página, exploramos as<br>
         principais características, inovações e mudanças de design que marcaram cada<br> geração.
-        Seja você um fã da <strong class="forte">Apple</strong>, um curioso por tecnologia ou alguém que quer<br> entender como o iPhone
-        moldou o mundo dos smartphones, aqui é o lugar certo<br> para acompanhar essa jornada <strong class="forte">revolucionária.</strong></p>
-    
+        Seja você um fã da <strong class="forte">Apple</strong>, um curioso por tecnologia ou alguém que quer<br>
+        entender como o iPhone
+        moldou o mundo dos smartphones, aqui é o lugar certo<br> para acompanhar essa jornada <strong
+            class="forte">revolucionária.</strong></p>
+
     <h1 class="nome-do-aparelho" style="clear: left;">
         Iphone 1
     </h1>
-    
+
     </main>
+    <aside id="lateral" class="backdrop">
+        <video src="Intro.mp4" autoplay muted>
+        </video>
+    </aside>
+    <script>
+        let tempo = 4000;
+        setTimeout(() => {
+            // faz o vídeo desaparecer colocando a classe .desaparecido
+            document.querySelector('.backdrop').classList.add('desaparecido');
+            // faz o conteúdo principal surgir, retirando a classe .desaparecido
+            document.querySelector('main').classList.remove('desaparecido');
+        }, tempo);
+    </script>
 </body>
 
 </html>

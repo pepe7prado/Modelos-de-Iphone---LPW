@@ -26,7 +26,6 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    animation: fadeIn 2s forwards;
     transform: translateY(30px);
     animation: subirEaparecer 2s ease-out forwards;
 }
@@ -85,4 +84,23 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 100px;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right:0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.desaparecido {
+  opacity: 0 !important;
+}
+
+.backdrop video {
+  width: 100%;
 }
