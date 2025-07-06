@@ -1,40 +1,38 @@
 body {
-    background-color: rgb(14, 14, 14);
+  background-color: rgb(14, 14, 14);
 }
 
 #logo-top {
-    display: block;
-    float: left;
-    width: 43px;
-    height: auto;
+  display: block;
+  float: left;
+  width: 43px;
+  height: auto;
 }
 
 header {
-    background-color: #1e1e2f;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -8px;
-    margin-bottom: px;
-   background-image: url('imgs/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100px 100px;
-    height: 100px;
-}
+  background-color: #1e1e2f;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -8px;
+  margin-bottom: px;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
 
 .principal {
-    text-align: center;
-    font-size: 75px;
-    font-family: Monospace;
-    font-weight: bold;
-    background: linear-gradient(to right, #007CF0, #7928CA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: subirEaparecer 4s ease-out forwards;
-    animation-delay: 4s;
+  text-align: center;
+  font-size: 75px;
+  font-family: Monospace;
+  font-weight: bold;
+  background: linear-gradient(to right, #007CF0, #7928CA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: subirEaparecer 4s ease-out forwards;
+  animation-delay: 4s;
 }
+
 @keyframes subirEaparecer {
   to {
     opacity: 1;
@@ -43,53 +41,58 @@ header {
 }
 
 p {
-    font-family: sans-serif;
-    padding-left: 336px;
+  font-family: sans-serif;
+  padding-left: 336px;
 
 }
 
-#steve{
-    float: left;
-    width: 330px;
-    height: auto;
-    opacity: 0;
-    animation: fadeIn 4s forwards;
-    animation-delay: 4s;
+#steve {
+  float: left;
+  width: 330px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  animation-delay: 4s;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
-.bem-vindo{
-    color: rgb(170, 170, 170);
-    padding-left: 400px;
+
+.bem-vindo {
+  color: rgb(170, 170, 170);
+  padding-left: 400px;
 }
-#texto-inicial{
-    color: rgb(170, 170, 170);
-    padding-right: 230px;
-    text-align:center;
+
+#texto-inicial {
+  color: rgb(170, 170, 170);
+  padding-right: 230px;
+  text-align: center;
 }
-.forte{
-    color: white;
+
+.forte {
+  color: white;
 }
+
 .nome-do-aparelho {
-    font-size: 75px;
-    font-family: Monospace;
-    font-weight: bold;
-    background: linear-gradient(to right, #007CF0, #7928CA);
-    background-size: 25%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 100px;
-    padding-left: 110px;  
+  font-size: 75px;
+  font-family: Monospace;
+  font-weight: bold;
+  background: linear-gradient(to right, #007CF0, #7928CA);
+  background-size: 33%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 100px;
+  padding-left: 110px;
 
 }
 
 .backdrop {
   position: fixed;
   left: 0;
-  right:0;
+  right: 0;
   top: 0;
   bottom: 0;
   z-index: 100;
@@ -105,13 +108,18 @@ p {
 .backdrop video {
   width: 100%;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 select {
-  background-color: #1e1e2f;     /* Cor de fundo */
-  color: #ffffff;                /* Cor do texto */
-  border: 2px solid #007CF0;     /* Borda personalizada */
+  background-color: #1e1e2f;
+  /* Cor de fundo */
+  color: #ffffff;
+  /* Cor do texto */
+  border: 2px solid #007CF0;
+  /* Borda personalizada */
   padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
@@ -120,38 +128,55 @@ select {
 }
 
 select:hover {
-  background-color: #2d2d44; 
-  border-color: #7928CA    /* Cor quando o mouse passa por cima */
+  background-color: #2d2d44;
+  border-color: #7928CA
+    /* Cor quando o mouse passa por cima */
 }
 
 select:focus {
   outline: none;
 }
+
 option:hover {
   background-color: #2d2d44;
 }
-.foto-do-aparelho{
+
+.foto-do-aparelho {
   width: 300px;
- /* margin: auto;
+  /* margin: auto;
   display: block;
   height: auto */
   padding-left: 110px;
   float: left;
   padding-top: 50px;
-  
-  
-} 
-.texto-iphone {
-    color: rgb(170, 170, 170);
-    font-size: 20px;
-    text-align: justify;
-    padding-right: 230px;
-    padding-left: 500px;
+
+
 }
-a {
+
+/*a {
     color: #007CF0;
     text-decoration: solid underline;
     font-weight: bold;
     display: block;
     text-align: center;
+}*/
+
+.botao-veja-mais {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: black;
+  margin-left: 350px;
+}
+
+#descrição {
+  color: #828283;
+  font-size: 32px;
+  padding-left: 750px;
+  font-family: monospace;
 }
