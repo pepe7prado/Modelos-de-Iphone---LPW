@@ -15,6 +15,11 @@ header {
     margin-left: -10px;
     margin-right: -8px;
     margin-bottom: px;
+   background-image: url('imgs/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+    height: 100px;
 }
 
 .principal {
@@ -132,6 +137,7 @@ option:hover {
   height: auto */
   padding-left: 110px;
   float: left;
+  padding-top: 50px;
   
   
 } 
@@ -142,7 +148,7 @@ option:hover {
     padding-right: 230px;
     padding-left: 500px;
 }
-.redirecionamento-pagina {
+a {
     color: #007CF0;
     text-decoration: solid underline;
     font-weight: bold;
