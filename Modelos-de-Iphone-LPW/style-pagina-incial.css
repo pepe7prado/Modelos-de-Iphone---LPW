@@ -77,6 +77,8 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 100px;
+    padding-left: 110px;  
+
 }
 
 .backdrop {
@@ -124,8 +126,26 @@ option:hover {
   background-color: #2d2d44;
 }
 .foto-do-aparelho{
-  width: 700px;
-  margin: auto;
+  width: 300px;
+ /* margin: auto;
   display: block;
-  height: auto;
+  height: auto */
+  padding-left: 110px;
+  float: left;
+  
+  
+} 
+.texto-iphone {
+    color: rgb(170, 170, 170);
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 230px;
+    padding-left: 500px;
+}
+.redirecionamento-pagina {
+    color: #007CF0;
+    text-decoration: solid underline;
+    font-weight: bold;
+    display: block;
+    text-align: center;
 }
