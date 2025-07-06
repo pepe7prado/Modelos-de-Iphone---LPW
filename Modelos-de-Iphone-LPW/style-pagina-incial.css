@@ -105,6 +105,15 @@ select {
   background-color: #1e1e2f;     /* Cor de fundo */
   color: #ffffff;                /* Cor do texto */
   border: 2px solid #007CF0;     /* Borda personalizada */
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Monospace;
+  transition: 0.3s ease;
+}
+
+select:hover {
+  background-color: #2d2d44; 
   border-color: #7928CA    /* Cor quando o mouse passa por cima */
 }
 
