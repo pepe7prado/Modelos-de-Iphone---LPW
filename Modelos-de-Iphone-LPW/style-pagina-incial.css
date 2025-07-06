@@ -4,13 +4,13 @@ body {
 
 #logo-top {
     display: block;
-    width: 110px;
+    float: left;
+    width: 43px;
     height: auto;
-    margin: 0 auto;
 }
 
 header {
-    background-color: rgb(85, 85, 85);
+    background-color: #1e1e2f;
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -8px;
@@ -27,7 +27,8 @@ header {
     -webkit-text-fill-color: transparent;
     opacity: 0;
     transform: translateY(30px);
-    animation: subirEaparecer 2s ease-out forwards;
+    animation: subirEaparecer 4s ease-out forwards;
+    animation-delay: 4s;
 }
 @keyframes subirEaparecer {
   to {
@@ -42,21 +43,13 @@ p {
 
 }
 
-#iphones {
-   /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding-left: 110px;
-    justify-content: space-between; */
-}
 #steve{
     float: left;
     width: 330px;
     height: auto;
     opacity: 0;
     animation: fadeIn 4s forwards;
+    animation-delay: 4s;
 }
 @keyframes fadeIn {
   to {
@@ -99,8 +92,31 @@ p {
 
 .desaparecido {
   opacity: 0 !important;
+  transition: 0.3s ease;
 }
 
 .backdrop video {
   width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+select {
+  background-color: #1e1e2f;     /* Cor de fundo */
+  color: #ffffff;                /* Cor do texto */
+  border: 2px solid #007CF0;     /* Borda personalizada */
+  border-color: #7928CA    /* Cor quando o mouse passa por cima */
+}
+
+select:focus {
+  outline: none;
+}
+option:hover {
+  background-color: #2d2d44;
+}
+.foto-do-aparelho{
+  width: 700px;
+  margin: auto;
+  display: block;
+  height: auto;
 }

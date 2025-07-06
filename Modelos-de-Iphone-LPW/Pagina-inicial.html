@@ -11,10 +11,32 @@
 <body>
     <header>
         <img id="logo-top" src="logo.png">
+        <select id="navegacao" onchange="location.href=this.value">
+            <option></option>
+            <option value="#iphone1">iPhone 1</option>
+            <option value="#iphone2">iPhone 2</option>
+            <option value="#iphone3">iPhone 3</option>
+            <option value="#iphone4">iPhone 4</option>
+            <option value="#iphone5">iPhone 5</option>
+            <option value="#iphone6">iPhone 6</option>
+            <option value="#iphone7">iPhone 7</option>
+            <option value="#iphone8">iPhone 8</option>
+            <option value="#iphone9">iPhone 9</option>
+            <option value="#iphone10">iPhone 10</option>
+            <option value="#iphone11">iPhone 11</option>
+            <option value="#iphone12">iPhone 12</option>
+            <option value="#iphone13">iPhone 13</option>
+            <option value="#iphone14">iPhone 14</option>
+            <option value="#iphone15">iPhone 15</option>
+            <option value="#iphone16">iPhone 16</option>
+        </select>
     </header>
+
     <h1 class="principal">
         Evolução dos iphones
+
     </h1>
+
     <img id="steve" src="steve jobs.png">
     <h2 class="bem-vindo">Bem-vindo à Linha do Tempo do iPhone!</h2>
     <p id="texto-inicial">Descubra a <strong class="forte">evolução</strong> de um dos dispositivos mais <strong
@@ -28,14 +50,21 @@
         moldou o mundo dos smartphones, aqui é o lugar certo<br> para acompanhar essa jornada <strong
             class="forte">revolucionária.</strong></p>
 
-    <h1 class="nome-do-aparelho" style="clear: left;">
-        Iphone 1
-    </h1>
-
+    <section id="iphone1">
+        <h1 class="nome-do-aparelho" style="clear: left;">Iphone 1</h1>
+        <img class="foto-do-aparelho" src="iphone1.png">
+    </section>
     </main>
+
+
+
+
+
+
+
+
     <aside id="lateral" class="backdrop">
-        <video src="Intro.mp4" autoplay muted>
-        </video>
+        <video src="Intro.mp4" autoplay muted></video>
     </aside>
     <script>
         let tempo = 4000;
