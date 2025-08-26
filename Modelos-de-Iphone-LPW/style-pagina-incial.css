@@ -81,7 +81,7 @@ p {
   font-family: Monospace;
   font-weight: bold;
   background: linear-gradient(to right, #007CF0, #7928CA);
-  background-size: 52%;
+  background-size: 96%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 100px;
@@ -115,11 +115,8 @@ html {
 
 select {
   background-color: #1e1e2f;
-  /* Cor de fundo */
   color: #ffffff;
-  /* Cor do texto */
   border: 2px solid #007CF0;
-  /* Borda personalizada */
   padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
@@ -130,7 +127,6 @@ select {
 select:hover {
   background-color: #2d2d44;
   border-color: #7928CA
-    /* Cor quando o mouse passa por cima */
 }
 
 select:focus {
@@ -143,23 +139,12 @@ option:hover {
 
 .foto-do-aparelho {
   width: 300px;
-  /* margin: auto;
-  display: block;
-  height: auto */
   padding-left: 110px;
   float: left;
   padding-top: 50px;
 
 
 }
-
-/*a {
-    color: #007CF0;
-    text-decoration: solid underline;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-}*/
 
 .botao-veja-mais {
   display: inline-block;

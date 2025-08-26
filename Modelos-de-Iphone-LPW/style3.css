@@ -1,0 +1,197 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.desaparecido {
+    opacity: 0 !important;
+    transition: 0.3s ease;
+}
+
+.backdrop video {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+:root {
+    --line-color: #a5a5a5;
+    --dot-size: 18px;
+    --img-size: 80px;
+    --input-width: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fafafa;
+    background-color: #202020;
+    padding: 20px;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* espaço entre as duas linhas */
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px 10px;
+    height: 240px;
+    gap: 8px;
+}
+
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 4px;
+    background: var(--line-color);
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 40px;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--dot-size);
+    height: var(--dot-size);
+    background: #000000;
+    border: 3px solid var(--line-color);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.timeline-item img {
+    width: var(--img-size);
+    height: var(--img-size);
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-text {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    width: 100%;
+    font-size: 80%;
+}
+
+.timeline-item img:hover {
+    transform: scale(1.2);
+}
+
+
+#steve {
+    float: left;
+    width: 330px;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+    animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background-color: #181835;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-right: -28px;
+    margin-bottom: px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo-top {
+    display: block;
+    width: 70px;
+    height: auto;
+    margin: auto;
+}
+
+.principal {
+    text-align: center;
+    font-size: 75px;
+    font-family: Monospace;
+    font-weight: bold;
+    background: linear-gradient(to right, #007CF0, #7928CA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: subirEaparecer 4s ease-out forwards;
+    animation-delay: 4s;
+}
+
+@keyframes subirEaparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bem-vindo {
+    color: rgb(170, 170, 170);
+    padding-left: 400px;
+}
+
+#texto-inicial {
+    color: rgb(170, 170, 170);
+    padding-right: 230px;
+    text-align: center;
+}
+
+.forte {
+    color: white;
+}
