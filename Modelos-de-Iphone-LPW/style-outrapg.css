@@ -1,15 +1,25 @@
 p, h2 {
     font-family: sans-serif;
-    padding-left: 450px;
-    color: rgb(170, 170, 170);
+    padding-left: 400px;
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
     
+}
+p {
+    line-height: 30px;
+}
+h2 {
+    margin-left: 150px;
 }
 .foto-do-aparelho {
     float: left;
-    width: 330px;
+    width: 300px;
     height: auto;
     opacity: 0;
     animation: fadeIn 4s forwards;
+    margin-left: -70px;
+    padding-top: 200px;
 
 }
 @keyframes fadeIn {
@@ -31,4 +41,49 @@ p, h2 {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #000; 
+    color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333; 
+}
+
+th {
+    background-color: #111; 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+tr:hover {
+    background-color: #222;
+    transition: 0.3s;
+}
+
+h1 {
+  text-align: center; 
+}
+a ,a:visited {
+    color: white;
+    text-decoration: underline;
+    font-family: sans-serif;
+    padding-left: 500px;
+    font-size: 20px;
+
+}
